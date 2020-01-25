@@ -9,7 +9,7 @@ public class Person {
 	
 	//constructor
 	public Person() {
-		name = "Unknown";
+		name = "unknown name";
 		maximumBooks = 3;
 	}
 	
@@ -30,6 +30,12 @@ public class Person {
 		this.maximumBooks = maximumBooks;
 	}
 
+	public String toString() {
+		return this.getName() + " ("+ this.getMaximumBooks() + " books)";
+		
+	};
+	
+	
 	///* ---- To test --------------------
 
 	public static void main(String[] args) {
